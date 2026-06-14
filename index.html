@@ -15,12 +15,22 @@
     <!-- Header / Navigation -->
     <header class="navbar">
         <a href="#" class="logo">Oscar Garcia Chamale</a>
-        <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+
+        <div class="nav-right">
+            <button id="lang-switch" class="lang-toggle" aria-label="Switch Language">
+                <span class="lang-label active-lang" id="lang-en">EN</span>
+                <span class="lang-divider">|</span>
+                <span class="lang-label" id="lang-es">ES</span>
+            </button>
+
+            <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        </div>        
+        
         <nav class="nav-links">
-            <a href="#about">About</a>
-            <a href="#pillars">Expertise</a>
-            <a href="#portfolio">Projects</a>
-            <a href="#contact" class="btn-nav">Contact</a>
+            <a href="#about" data-i18n="nav-about">About</a>
+            <a href="#pillars" data-i18n="nav-expertise">Expertise</a>
+            <a href="#portfolio" data-i18n="nav-projects">Projects</a>
+            <a href="#contact" class="btn-nav" data-i18n="nav-contact">Contact</a>
         </nav>
     </header>
 
