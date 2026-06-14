@@ -1,1 +1,113 @@
-<h1>Mi Portafolio</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Garcia | Project & Product Management Portfolio</title>
+    <!-- Google Fonts for a clean, modern tech aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <a href="#" class="logo">YourName.dev</a>
+        <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#pillars">Expertise</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact" class="btn-nav">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <div class="container">
+                <h1>Bridging Technical Execution with Product Strategy</h1>
+                <p class="hero-subtext">
+                    I am a seasoned professional specializing in leading complex software delivery tracks while championing user-centric product discovery.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View Projects</a>
+                    <a href="resume.pdf" class="btn btn-secondary" target="_blank">Download CV (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillars of Expertise -->
+        <section id="pillars" class="pillars">
+            <div class="container grid-2">
+                <div class="pillar-card">
+                    <h3>Project Management</h3>
+                    <ul>
+                        <li>End-to-end scoping, scheduling, and risk mitigation</li>
+                        <li>Agile/Scrum framework optimization & team leadership</li>
+                        <li>Cross-functional stakeholder alignment</li>
+                    </ul>
+                </div>
+                <div class="pillar-card">
+                    <h3>Product Management</h3>
+                    <ul>
+                        <li>Product strategy, MVP definition, and roadmapping</li>
+                        <li>Data-driven prioritization & market research</li>
+                        <li>Defining product requirements (PRDs) and user stories</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section with Interactive Filter -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>Featured Initiatives</h2>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="pm">Project Management</button>
+                    <button class="filter-btn" data-filter="prod">Product Management</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card" data-category="pm">
+                        <span class="badge tag-pm">Project Management</span>
+                        <h3>Enterprise Cloud Migration</h3>
+                        <p>Led a multi-disciplinary team to migrate a legacy infrastructure to a high-availability environment under budget and ahead of schedule.</p>
+                        <span class="impact"><strong>Impact:</strong> Achieved 99.99% uptime alignment.</span>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card" data-category="prod">
+                        <span class="badge tag-prod">Product Management</span>
+                        <h3>Mobile App Transformation</h3>
+                        <p>Owned the product discovery and lifecycle for a local-first, privacy-focused mobile tool. Designed user flows and prioritized the MVP roadmap.</p>
+                        <span class="impact"><strong>Impact:</strong> 40% reduction in user onboarding friction.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>Let's build something exceptional together.</p>
+            <div class="social-links">
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            </div>
+            <p class="copyright">&copy; 2026 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
