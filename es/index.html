@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Garcia | Portafolio de Dirección de Proyecto y de Productos</title>
+    <!-- Google Fonts for a clean, modern tech aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <a href="#" class="logo">Oscar Garcia Chamale</a>
+
+        <div class="nav-right">
+            <button id="lang-switch" class="lang-toggle" aria-label="Switch Language">
+                <span class="lang-label active-lang" id="lang-en">EN</span>
+                <span class="lang-divider">|</span>
+                <span class="lang-label" id="lang-es">ES</span>
+            </button>
+
+            <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        </div>        
+        
+        <nav class="nav-links">
+            <a href="#about" data-i18n="nav-about">Acerca de</a>
+            <a href="#pillars" data-i18n="nav-expertise">Experiencia</a>
+            <a href="#portfolio" data-i18n="nav-projects">Proyectos</a>
+            <a href="#contact" class="btn-nav" data-i18n="nav-contact">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <div class="container">
+                <h1>Uniendo la Ejecución Técnica con la Estrategia de Producto</h1>
+                <p class="hero-subtext">
+                    Soy un profesional experimentado especializado en liderar la entrega de software complejos mientras defiendo el descubrimiento de productos centrados en el usuario.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="resume.pdf" class="btn btn-secondary" target="_blank">Descargar CV (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillars of Expertise -->
+        <section id="pillars" class="pillars">
+            <div class="container grid-2">
+                <div class="pillar-card">
+                    <h3>Dirección de Proyectos</h3>
+                    <ul>
+                        <li>End-to-end scoping, scheduling, and risk mitigation</li>
+                        <li>Agile/Scrum framework optimization & team leadership</li>
+                        <li>Cross-functional stakeholder alignment</li>
+                    </ul>
+                </div>
+                <div class="pillar-card">
+                    <h3>Dirección de Productos</h3>
+                    <ul>
+                        <li>Product strategy, MVP definition, and roadmapping</li>
+                        <li>Data-driven prioritization & market research</li>
+                        <li>Defining product requirements (PRDs) and user stories</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section with Interactive Filter -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>Iniciativas Destacadas</h2>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="pm">Dirección de Proyectos</button>
+                    <button class="filter-btn" data-filter="prod">Dirección de Productos</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card" data-category="pm">
+                        <span class="badge tag-pm">Project Management</span>
+                        <h3>Enterprise Cloud Migration</h3>
+                        <p>Led a multi-disciplinary team to migrate a legacy infrastructure to a high-availability environment under budget and ahead of schedule.</p>
+                        <span class="impact"><strong>Impact:</strong> Achieved 99.99% uptime alignment.</span>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card" data-category="prod">
+                        <span class="badge tag-prod">Product Management</span>
+                        <h3>Mobile App Transformation</h3>
+                        <p>Owned the product discovery and lifecycle for a local-first, privacy-focused mobile tool. Designed user flows and prioritized the MVP roadmap.</p>
+                        <span class="impact"><strong>Impact:</strong> 40% reduction in user onboarding friction.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>Contruyamos algo excepcional juntos.</p>
+            <div class="social-links">
+                <a href="mailto:oa.garcia.ch@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/oscargarciachamale/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/oscargarciachamale" target="_blank">GitHub</a>
+            </div>
+            <p class="copyright">&copy; 2026 Oscar Garcia Chamale. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
